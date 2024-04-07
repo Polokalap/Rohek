@@ -12,3 +12,6 @@ Yes, You Can.
 
 ![image](https://github.com/Polokalap/Rohek/assets/116758671/14d357ce-97b5-4890-92cc-f56a8fc14243)
 
+# 1.1 Is Out! And the gui works on mobile too! 
+You need to use pydroid3. The new version is always Rohek.py.
+
