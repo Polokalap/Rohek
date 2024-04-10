@@ -2,15 +2,13 @@
 WARNING! THIS SCRIPT CAN SEND 100000 PACKETS IN LESS THEN A SECOND! EDUCATIONAL PURPOSHES ONLY! I know this is not the best DDoS script but please only use it with permisson.
 
 # How to use
-Download zip and open the py after You Extracted it.
+Go to releases and download the latest version.
 
 # Is this legal?
-No. So Please Only use it with permisson.
+No.
 
 # Can I Edit the code? 
 Yes, You Can.
-
-![image](https://github.com/Polokalap/Rohek/assets/116758671/14d357ce-97b5-4890-92cc-f56a8fc14243)
 
 # 1.1 Is Out! And the gui works on mobile too! 
 You need to use pydroid3. The new version is always Rohek.py.
