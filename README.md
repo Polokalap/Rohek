@@ -7,9 +7,6 @@ Go to releases and download the latest version.
 # Is this legal?
 No.
 
-# Can I Edit the code? 
-Yes, You Can.
-
-# 1.1 Is Out! And the gui works on mobile too! 
-You need to use pydroid3. The new version is always Rohek.py.
+# Is this open source? 
+Yes this code is open source.
 
